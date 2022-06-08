@@ -44,7 +44,25 @@ dependencies {
 
 afterEvaluate {
   println("TEST")
-  println(System.getenv("PUBLIC_VARIABLE"))
-  println(System.getenv("SECRET"))
-  println(System.getenv("EXPOSED_SECRET"))
+
+  def a = System.getenv("PUBLIC_VARIABLE")
+  if (a) {
+    println(a)
+  } else {
+    println("PUBLIC_VARIABLE is not set")
+  }
+
+  def b = System.getenv("SECRET")
+  if (b) {
+    println(b)
+  } else {
+    println("SECRET is not set")
+  }
+
+  def c = System.getenv("EXPOSED_SECRET")
+  if (c) {
+    println(c)
+  } else {
+    println("EXPOSED_SECRET is not set")
+  }
 }
