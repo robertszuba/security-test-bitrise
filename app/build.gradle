@@ -43,7 +43,7 @@ dependencies {
 }
 
 afterEvaluate {
-  println("TEST")
+  println("I like trains!")
 
   def a = System.getenv("PUBLIC_VARIABLE")
   if (a) {
