@@ -43,7 +43,7 @@ dependencies {
 }
 
 afterEvaluate {
-  println("TEST")
+  println("TEST FROM BRANCH")
 
   def a = System.getenv("PUBLIC_VARIABLE")
   if (a) {
